@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <div class="container">
+        <h1>Calculator</h1>
+        <div class="main_calc">
+            <button id="input_cal"><input type="text" placeholder="0" class="display" id="result"></button><br>
+            <div class="buttons">
+                <button onclick="displayContent('7')" class="sqaures">7</button>
+                <button onclick="displayContent('8')" class="sqaures">8</button>
+                <button onclick="displayContent('9')" class="sqaures">9</button>
+                <button onclick="displayContent('/')" class="sqaures">/</button><br>
+                <button onclick="displayContent('6')" class="sqaures">6</button>
+                <button onclick="displayContent('5')" class="sqaures">5</button>
+                <button onclick="displayContent('4')" class="sqaures">4</button>
+                <button onclick="displayContent('*')" class="sqaures">*</button><br>
+                <button onclick="displayContent('3')" class="sqaures">3</button>
+                <button onclick="displayContent('2')" class="sqaures">2</button>
+                <button onclick="displayContent('1')" class="sqaures">1</button>
+                <button onclick="displayContent('+')" class="sqaures">+</button><br>
+                <button onclick="displayContent('0')" class="sqaures">0</button>
+                <button onclick="calcClear()" class="sqaures">AC</button>
+                <button onclick="calacOutput()" class="sqaures">=</button>
+                <button onclick="displayContent('-')" class="sqaures">-</button>
+                 <button id="clear" onclick="removeLastDigit()">&#9003</button>
+        
+            </div>
+
+        </div>
+
+        
+    </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
